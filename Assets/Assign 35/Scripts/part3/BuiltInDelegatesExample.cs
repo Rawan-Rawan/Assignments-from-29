@@ -1,18 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class BuiltInDelegatesExample : MonoBehaviour
+namespace Assignment35
 {
-    // Start is called before the first frame update
-    void Start()
+    public class BuiltInDelegatesExample : MonoBehaviour
     {
-        
-    }
+        Action<string> logMessage;
+        void Start()
+        {
+            logMessage = (message) => Debug.Log(message);
+            logMessage("Hello from Action delegate!");
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
