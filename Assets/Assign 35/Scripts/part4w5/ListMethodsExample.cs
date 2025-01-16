@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Assignment35
 {
-    public class NewBehaviourScript : MonoBehaviour
+    public class ListMethodsExample : MonoBehaviour
     {
         void Start()
         {
