@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class AbstractBaseClass : MonoBehaviour
+namespace Assignment35
 {
-    // Start is called before the first frame update
-    void Start()
+    public abstract class AbstractBaseClass : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public abstract void PerformAction();
+        public void PrintInfo()
+        {
+            Debug.Log("This is a concrete method in the abstract base class.");
+        }
     }
 }
